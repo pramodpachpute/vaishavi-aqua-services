@@ -1,0 +1,211 @@
+/* ==========================================
+   ABOUT
+========================================== */
+
+.about {
+  position: relative;
+  overflow: hidden;
+
+  padding: 72px 0;
+
+  background:
+    radial-gradient(
+      circle at 90% 20%,
+      rgba(8, 145, 195, 0.06),
+      transparent 25%
+    ),
+    #ffffff;
+
+  border-bottom: 1px solid #edf2f5;
+}
+
+.about-container {
+  width: min(1240px, 90%);
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+
+  align-items: center;
+
+  gap: 90px;
+}
+
+
+/* ==========================================
+   LEFT
+========================================== */
+
+.about-tag {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 15px;
+
+  color: #078cc2;
+
+  font-size: 10px;
+  font-weight: 900;
+
+  letter-spacing: 1.8px;
+}
+
+.about-tag span {
+  width: 25px;
+  height: 2px;
+
+  border-radius: 10px;
+
+  background: #078cc2;
+}
+
+.about-left h2 {
+  margin: 0;
+
+  color: #091d37;
+
+  font-size: clamp(34px, 3.2vw, 47px);
+  line-height: 1.12;
+
+  font-weight: 900;
+
+  letter-spacing: -1.8px;
+}
+
+.about-left h2 span {
+  color: #078dc4;
+}
+
+
+/* ==========================================
+   RIGHT
+========================================== */
+
+.about-right {
+  padding-left: 45px;
+
+  border-left: 1px solid #dce8ee;
+}
+
+.about-right > p {
+  max-width: 590px;
+
+  margin: 0;
+
+  color: #65778c;
+
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+
+/* ==========================================
+   POINTS
+========================================== */
+
+.about-points {
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+
+  margin-top: 25px;
+}
+
+.about-point {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+.about-point span {
+  width: 24px;
+  height: 24px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #e5f7fd;
+
+  color: #078dc4;
+
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.about-point strong {
+  color: #1b3048;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  white-space: nowrap;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 900px) {
+  .about {
+    padding: 60px 0;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .about-right {
+    padding-left: 0;
+    padding-top: 25px;
+
+    border-left: none;
+    border-top: 1px solid #dce8ee;
+  }
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+  .about {
+    padding: 50px 0;
+  }
+
+  .about-container {
+    width: 90%;
+  }
+
+  .about-left h2 {
+    font-size: 34px;
+
+    letter-spacing: -1.2px;
+  }
+
+  .about-right > p {
+    font-size: 14px;
+  }
+
+  .about-points {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 13px;
+
+    margin-top: 22px;
+  }
+}

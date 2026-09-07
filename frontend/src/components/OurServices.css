@@ -1,0 +1,346 @@
+/* =========================================
+   OUR COMPLETED WORK
+========================================= */
+
+.our-work-section {
+  width: 100%;
+  padding: 65px 0;
+  background: #f8fbfd;
+}
+
+.our-work-container {
+  width: min(1200px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* =========================================
+   HEADING
+========================================= */
+
+.our-work-heading {
+  max-width: 700px;
+  margin: 0 auto 35px;
+  text-align: center;
+}
+
+.our-work-heading span {
+  display: inline-block;
+  margin-bottom: 8px;
+
+  color: #0284c7;
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.our-work-heading h2 {
+  margin: 0 0 12px;
+
+  color: #0f172a;
+
+  font-size: clamp(28px, 3.5vw, 40px);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.our-work-heading p {
+  max-width: 600px;
+  margin: 0 auto;
+
+  color: #64748b;
+
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+/* =========================================
+   LOADING
+========================================= */
+
+.our-work-loading {
+  padding: 40px 0;
+
+  text-align: center;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+/* =========================================
+   GRID - 4 CARDS DESKTOP
+========================================= */
+
+.our-work-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 18px;
+
+  align-items: stretch;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.our-work-card {
+  min-width: 0;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+
+  box-shadow:
+    0 5px 18px rgba(15, 23, 42, 0.06);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.our-work-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #bae6fd;
+
+  box-shadow:
+    0 12px 28px rgba(15, 23, 42, 0.11);
+}
+
+/* =========================================
+   COMPACT PHOTO
+========================================= */
+
+.our-work-image {
+  width: 100%;
+
+  aspect-ratio: 4 / 3;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f1f5f9;
+}
+
+.our-work-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  /*
+     contain = entire photo visible.
+     Photo will NOT be cropped.
+  */
+  object-fit: contain;
+
+  transition: transform 0.3s ease;
+}
+
+.our-work-card:hover .our-work-image img {
+  transform: scale(1.02);
+}
+
+/* =========================================
+   NO IMAGE
+========================================= */
+
+.our-work-no-image {
+  width: 100%;
+  height: 100%;
+
+  min-height: 170px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px;
+
+  box-sizing: border-box;
+
+  color: #94a3b8;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-align: center;
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.our-work-content {
+  padding: 15px 16px 17px;
+}
+
+.our-work-content h3 {
+  margin: 0 0 7px;
+
+  color: #0f172a;
+
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+/* =========================================
+   SHORT DESCRIPTION
+========================================= */
+
+.our-work-content p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 12.5px;
+  line-height: 1.55;
+
+  display: -webkit-box;
+  overflow: hidden;
+
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+/* =========================================
+   LARGE TABLET
+   3 CARDS
+========================================= */
+
+@media (max-width: 1050px) {
+
+  .our-work-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* =========================================
+   TABLET
+   2 CARDS
+========================================= */
+
+@media (max-width: 760px) {
+
+  .our-work-section {
+    padding: 55px 0;
+  }
+
+  .our-work-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 520px) {
+
+  .our-work-section {
+    padding: 45px 0;
+  }
+
+  .our-work-container {
+    width: calc(100% - 24px);
+  }
+
+  .our-work-heading {
+    margin-bottom: 27px;
+  }
+
+  .our-work-heading h2 {
+    font-size: 27px;
+  }
+
+  .our-work-heading p {
+    font-size: 13px;
+  }
+
+  /*
+     Keep 2 compact cards on wider phones
+  */
+
+  .our-work-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+  }
+
+  .our-work-card {
+    border-radius: 11px;
+  }
+
+  .our-work-content {
+    padding: 11px;
+  }
+
+  .our-work-content h3 {
+    margin-bottom: 5px;
+
+    font-size: 14px;
+  }
+
+  .our-work-content p {
+    font-size: 11.5px;
+    line-height: 1.45;
+  }
+}
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 360px) {
+
+  .our-work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .our-work-content {
+    padding: 14px;
+  }
+
+  .our-work-content h3 {
+    font-size: 16px;
+  }
+
+  .our-work-content p {
+    font-size: 12.5px;
+  }
+}
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .our-work-card,
+  .our-work-image img {
+    transition: none;
+  }
+
+  .our-work-card:hover,
+  .our-work-card:hover .our-work-image img {
+    transform: none;
+  }
+}

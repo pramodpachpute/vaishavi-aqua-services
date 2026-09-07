@@ -1,0 +1,1030 @@
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.hero {
+  position: relative;
+
+  width: 100%;
+  min-height: calc(100vh - 82px);
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 88% 15%,
+      rgba(0, 166, 226, 0.12),
+      transparent 26%
+    ),
+    linear-gradient(
+      115deg,
+      #ffffff 0%,
+      #f8fcff 42%,
+      #eef9fd 100%
+    );
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.hero-container {
+  position: relative;
+  z-index: 5;
+
+  width: min(1400px, 90%);
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(520px, 0.95fr);
+
+  align-items: center;
+
+  gap: 75px;
+
+  padding: 75px 0 70px;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.hero-content {
+  position: relative;
+  z-index: 5;
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.hero-badge {
+  width: fit-content;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 37px;
+
+  padding: 9px 17px;
+
+  border: 1px solid #c7e4f2;
+  border-radius: 40px;
+
+  background: rgba(255, 255, 255, 0.8);
+
+  color: #067db5;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 0.7px;
+
+  text-transform: uppercase;
+
+  box-shadow:
+    0 4px 16px rgba(22, 128, 172, 0.04);
+}
+
+.badge-drop {
+  font-size: 15px;
+}
+
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.hero-content h1 {
+  margin: 0;
+
+  color: #081c37;
+
+  font-size: clamp(58px, 5.4vw, 88px);
+
+  line-height: 0.98;
+
+  font-weight: 900;
+
+  letter-spacing: -4.8px;
+}
+
+.hero-content h1 span {
+  display: inline-block;
+
+  margin-top: 12px;
+
+  color: #078dc4;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.hero-description {
+  max-width: 660px;
+
+  margin: 32px 0 0;
+
+  color: #627489;
+
+  font-size: 17px;
+
+  line-height: 1.85;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  margin-top: 34px;
+}
+
+.hero-primary-btn,
+.hero-secondary-btn {
+  min-height: 58px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 11px;
+
+  padding: 0 27px;
+
+  border-radius: 13px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+
+/* WhatsApp */
+
+.hero-primary-btn {
+  min-width: 190px;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #05a6d5,
+      #067db5
+    );
+
+  box-shadow:
+    0 13px 30px rgba(6, 125, 181, 0.22);
+}
+
+.hero-primary-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 18px 38px rgba(6, 125, 181, 0.28);
+}
+
+.whatsapp-icon {
+  width: 20px;
+  height: 20px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #ffffff;
+
+  border-radius: 50%;
+
+  color: transparent;
+}
+
+.button-arrow {
+  margin-left: 5px;
+
+  font-size: 19px;
+
+  transition: transform 0.2s ease;
+}
+
+.hero-primary-btn:hover .button-arrow {
+  transform: translateX(4px);
+}
+
+
+/* Call */
+
+.hero-secondary-btn {
+  min-width: 150px;
+
+  border: 1px solid #bfdae8;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  color: #10263f;
+}
+
+.hero-secondary-btn:hover {
+  transform: translateY(-3px);
+
+  border-color: #078dc4;
+
+  color: #078dc4;
+
+  background: #ffffff;
+}
+
+.call-symbol {
+  color: #078dc4;
+
+  font-size: 17px;
+}
+
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.hero-stats {
+  display: flex;
+  align-items: center;
+
+  gap: 31px;
+
+  margin-top: 55px;
+}
+
+.hero-stat {
+  min-width: 125px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+.stat-icon {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 13px;
+
+  border-radius: 50%;
+
+  background: #e5f6fd;
+
+  color: #078dc4;
+
+  font-size: 19px;
+}
+
+.stat-details {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.stat-details strong {
+  color: #081c37;
+
+  font-size: 21px;
+
+  font-weight: 900;
+}
+
+.stat-details span {
+  color: #708298;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 70px;
+
+  background: #d7e5ec;
+}
+
+
+/* =========================================================
+   RIGHT SIDE
+========================================================= */
+
+.hero-visual {
+  position: relative;
+
+  min-height: 565px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =========================================================
+   PRODUCT CARD
+========================================================= */
+
+.hero-product-card {
+  position: relative;
+
+  width: 100%;
+  min-height: 540px;
+
+  overflow: hidden;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(250px, 0.9fr)
+    minmax(250px, 1.1fr);
+
+  align-items: center;
+
+  padding: 42px 26px 37px 48px;
+
+  border: 1px solid rgba(255, 255, 255, 0.95);
+
+  border-radius: 32px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.97),
+      rgba(243, 251, 255, 0.91)
+    );
+
+  box-shadow:
+    0 35px 90px rgba(31, 111, 148, 0.14);
+
+  backdrop-filter: blur(20px);
+}
+
+
+/* =========================================================
+   CARD TEXT
+========================================================= */
+
+.product-content {
+  position: relative;
+
+  z-index: 10;
+}
+
+.product-drop {
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 32px;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 10px 30px rgba(24, 106, 145, 0.12);
+
+  font-size: 32px;
+}
+
+.product-brand {
+  display: block;
+
+  margin-bottom: 31px;
+
+  color: #087fba;
+
+  font-size: 11px;
+
+  font-weight: 900;
+
+  letter-spacing: 1.6px;
+}
+
+.product-content h2 {
+  margin: 0;
+
+  color: #081d38;
+
+  font-size: 30px;
+
+  line-height: 1.2;
+
+  font-weight: 850;
+
+  letter-spacing: -1px;
+}
+
+.product-content > p {
+  max-width: 310px;
+
+  margin: 21px 0 0;
+
+  color: #64778d;
+
+  font-size: 13px;
+
+  line-height: 1.75;
+}
+
+.product-line {
+  width: 180px;
+  height: 1px;
+
+  margin: 27px 0;
+
+  background: #dceaf1;
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.product-features {
+  display: flex;
+  flex-direction: column;
+
+  gap: 17px;
+}
+
+.product-features > div {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  color: #14273f;
+
+  font-size: 12px;
+}
+
+.product-features strong {
+  font-weight: 750;
+}
+
+.check-icon {
+  width: 23px;
+  height: 23px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #109fd4,
+      #087bb6
+    );
+
+  color: #ffffff;
+
+  font-size: 11px;
+
+  font-weight: 900;
+}
+
+
+/* =========================================================
+   PURIFIER IMAGE
+========================================================= */
+
+.purifier-area {
+  position: relative;
+
+  z-index: 5;
+
+  height: 100%;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.purifier-glow {
+  position: absolute;
+
+  width: 330px;
+  height: 330px;
+
+  top: 75px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(17, 160, 214, 0.2),
+      rgba(17, 160, 214, 0.06) 55%,
+      transparent 72%
+    );
+
+  filter: blur(5px);
+}
+
+.purifier-image {
+  position: relative;
+
+  z-index: 5;
+
+  width: 118%;
+  max-width: 390px;
+
+  max-height: 475px;
+
+  object-fit: contain;
+
+  object-position: center bottom;
+
+  filter:
+    drop-shadow(
+      0 20px 20px rgba(31, 91, 119, 0.14)
+    );
+}
+
+
+/* =========================================================
+   DECORATIVE LEAVES
+========================================================= */
+
+.leaf {
+  position: absolute;
+
+  z-index: 8;
+
+  font-size: 39px;
+
+  filter:
+    drop-shadow(
+      0 5px 8px rgba(33, 130, 68, 0.1)
+    );
+}
+
+.leaf-one {
+  right: -8px;
+  top: 90px;
+
+  transform: rotate(-35deg);
+}
+
+.leaf-two {
+  left: 5px;
+  bottom: 5px;
+
+  transform: rotate(25deg);
+}
+
+
+/* =========================================================
+   WATER EFFECT
+========================================================= */
+
+.water-splash {
+  position: absolute;
+
+  z-index: 2;
+
+  right: -35px;
+  bottom: -75px;
+
+  width: 460px;
+  height: 180px;
+
+  border-radius: 50%;
+
+  border-top:
+    12px solid rgba(0, 157, 219, 0.13);
+
+  transform:
+    rotate(-4deg);
+
+  pointer-events: none;
+}
+
+.water-splash::before {
+  content: "";
+
+  position: absolute;
+
+  left: -55px;
+  top: 35px;
+
+  width: 460px;
+  height: 150px;
+
+  border-radius: 50%;
+
+  border-top:
+    8px solid rgba(0, 157, 219, 0.1);
+}
+
+.water-splash span {
+  position: absolute;
+
+  width: 9px;
+  height: 9px;
+
+  border: 2px solid rgba(7, 143, 198, 0.35);
+
+  border-radius: 50%;
+}
+
+.water-splash span:nth-child(1) {
+  left: 20px;
+  top: 7px;
+}
+
+.water-splash span:nth-child(2) {
+  left: 90px;
+  top: -12px;
+
+  width: 6px;
+  height: 6px;
+}
+
+.water-splash span:nth-child(3) {
+  right: 65px;
+  top: -20px;
+
+  width: 12px;
+  height: 12px;
+}
+
+.water-splash span:nth-child(4) {
+  right: 10px;
+  top: 40px;
+}
+
+.water-splash span:nth-child(5) {
+  right: 130px;
+  top: 15px;
+
+  width: 5px;
+  height: 5px;
+}
+
+
+/* =========================================================
+   BACKGROUND BUBBLES
+========================================================= */
+
+.water-bubble {
+  position: absolute;
+
+  z-index: 10;
+
+  border: 2px solid rgba(5, 145, 199, 0.3);
+
+  border-radius: 50%;
+}
+
+.bubble-one {
+  width: 14px;
+  height: 14px;
+
+  right: -10px;
+  top: 50px;
+}
+
+.bubble-two {
+  width: 8px;
+  height: 8px;
+
+  right: 55px;
+  top: 105px;
+}
+
+.bubble-three {
+  width: 10px;
+  height: 10px;
+
+  right: -8px;
+  top: 220px;
+}
+
+.bubble-four {
+  width: 6px;
+  height: 6px;
+
+  left: -20px;
+  bottom: 110px;
+}
+
+
+/* =========================================================
+   HERO BACKGROUND DECORATIONS
+========================================================= */
+
+.hero-circle {
+  position: absolute;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.hero-circle-one {
+  width: 500px;
+  height: 500px;
+
+  right: -230px;
+  top: -230px;
+
+  background:
+    rgba(0, 165, 224, 0.05);
+}
+
+.hero-circle-two {
+  width: 390px;
+  height: 390px;
+
+  left: -230px;
+  bottom: -250px;
+
+  background:
+    rgba(0, 165, 224, 0.05);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .hero-container {
+    grid-template-columns: 1fr;
+
+    gap: 70px;
+
+    padding: 75px 0;
+  }
+
+  .hero-content {
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    text-align: center;
+  }
+
+  .hero-badge {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    width: min(750px, 100%);
+
+    margin: 0 auto;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-container {
+    width: 90%;
+
+    gap: 55px;
+
+    padding: 55px 0;
+  }
+
+  .hero-badge {
+    margin-bottom: 26px;
+
+    font-size: 9px;
+  }
+
+  .hero-content h1 {
+    font-size: 50px;
+
+    letter-spacing: -3px;
+  }
+
+  .hero-description {
+    margin-top: 24px;
+
+    font-size: 15px;
+  }
+
+
+  /* Buttons */
+
+  .hero-buttons {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .hero-primary-btn,
+  .hero-secondary-btn {
+    width: 100%;
+  }
+
+
+  /* Stats */
+
+  .hero-stats {
+    gap: 8px;
+
+    justify-content: space-between;
+  }
+
+  .hero-stat {
+    min-width: 0;
+
+    flex: 1;
+  }
+
+  .stat-divider {
+    height: 62px;
+  }
+
+  .stat-icon {
+    width: 38px;
+    height: 38px;
+
+    font-size: 15px;
+  }
+
+  .stat-details strong {
+    font-size: 17px;
+  }
+
+  .stat-details span {
+    font-size: 7px;
+  }
+
+
+  /* Right card */
+
+  .hero-visual {
+    min-height: auto;
+  }
+
+  .hero-product-card {
+    min-height: auto;
+
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+
+    padding: 35px 28px 0;
+  }
+
+  .product-content {
+    text-align: center;
+  }
+
+  .product-drop {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .product-content > p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .product-line {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .product-features {
+    width: fit-content;
+
+    margin: 0 auto;
+
+    text-align: left;
+  }
+
+  .purifier-area {
+    min-height: 320px;
+  }
+
+  .purifier-image {
+    width: 85%;
+
+    max-height: 330px;
+  }
+
+  .leaf-one {
+    right: 5px;
+    top: 80px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 450px) {
+
+  .hero-content h1 {
+    font-size: 43px;
+
+    letter-spacing: -2px;
+  }
+
+  .hero-stats {
+    margin-top: 42px;
+  }
+
+  .stat-icon {
+    display: none;
+  }
+
+  .stat-divider {
+    height: 40px;
+  }
+
+  .hero-product-card {
+    border-radius: 22px;
+
+    padding:
+      30px
+      20px
+      0;
+  }
+
+  .product-content h2 {
+    font-size: 25px;
+  }
+
+}

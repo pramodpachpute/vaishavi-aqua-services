@@ -1,0 +1,749 @@
+/* =========================================
+   VAISHNAVI ENTERPRISES - ADMIN SERVICES
+========================================= */
+
+.services-admin-page {
+  width: 100%;
+}
+
+/* =========================================
+   PAGE HEADING
+========================================= */
+
+.services-page-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.services-page-heading h2 {
+  margin: 0 0 6px;
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.services-page-heading p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #64748b;
+}
+
+.services-refresh-button {
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 16px;
+  border: 1px solid #dbe4ee;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.services-refresh-button:hover:not(:disabled) {
+  background: #f8fafc;
+  border-color: #bae6fd;
+  transform: translateY(-1px);
+}
+
+.services-refresh-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =========================================
+   MESSAGES
+========================================= */
+
+.services-message {
+  margin-bottom: 20px;
+  padding: 13px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.services-message.error {
+  border: 1px solid #fecaca;
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.services-message.success {
+  border: 1px solid #bbf7d0;
+  background: #f0fdf4;
+  color: #15803d;
+}
+
+/* =========================================
+   SERVICE FORM CARD
+========================================= */
+
+.service-form-card {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 26px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+}
+
+/* =========================================
+   FORM HEADER
+========================================= */
+
+.service-form-header {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eef2f7;
+}
+
+.service-form-icon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+.service-form-header h3 {
+  margin: 0 0 4px;
+  font-size: 18px;
+  font-weight: 750;
+  color: #0f172a;
+}
+
+.service-form-header p {
+  margin: 0;
+  font-size: 13.5px;
+  color: #64748b;
+}
+
+/* =========================================
+   FORM GRID
+========================================= */
+
+.service-form-grid {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(280px, 380px);
+  gap: 30px;
+  align-items: start;
+}
+
+.service-fields {
+  min-width: 0;
+}
+
+/* =========================================
+   FORM INPUTS
+========================================= */
+
+.service-form-group {
+  margin-bottom: 20px;
+}
+
+.service-form-group:last-child {
+  margin-bottom: 0;
+}
+
+.service-form-group label,
+.service-image-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #334155;
+  font-size: 13.5px;
+  font-weight: 650;
+}
+
+.service-form-group label span,
+.service-image-label span {
+  margin-left: 3px;
+  color: #dc2626;
+}
+
+.service-form-group input,
+.service-form-group textarea {
+  width: 100%;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 11px;
+  outline: none;
+  background: #f8fafc;
+  color: #0f172a;
+  font-family: inherit;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.service-form-group input {
+  height: 50px;
+  padding: 0 15px;
+}
+
+.service-form-group textarea {
+  min-height: 145px;
+  padding: 14px 15px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.service-form-group input::placeholder,
+.service-form-group textarea::placeholder {
+  color: #94a3b8;
+}
+
+.service-form-group input:focus,
+.service-form-group textarea:focus {
+  background: #ffffff;
+  border-color: #0ea5e9;
+  box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.09);
+}
+
+/* =========================================
+   IMAGE UPLOAD
+========================================= */
+
+.service-image-section {
+  width: 100%;
+}
+
+.service-image-upload {
+  width: 100%;
+  padding: 14px;
+  border: 1.5px dashed #cbd5e1;
+  border-radius: 14px;
+  background: #f8fafc;
+  box-sizing: border-box;
+}
+
+/* =========================================
+   IMAGE PLACEHOLDER
+========================================= */
+
+.service-upload-placeholder {
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 25px;
+  text-align: center;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #64748b;
+  box-sizing: border-box;
+}
+
+.service-upload-placeholder svg {
+  margin-bottom: 5px;
+  color: #0ea5e9;
+}
+
+.service-upload-placeholder strong {
+  color: #334155;
+  font-size: 14px;
+}
+
+.service-upload-placeholder span {
+  font-size: 12.5px;
+  color: #64748b;
+}
+
+.service-upload-placeholder small {
+  font-size: 11.5px;
+  color: #94a3b8;
+}
+
+/* =========================================
+   IMAGE PREVIEW
+========================================= */
+
+.service-image-preview {
+  width: 100%;
+  height: 230px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.service-image-preview img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.remove-preview-button {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgba(15, 23, 42, 0.82);
+  color: #ffffff;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.remove-preview-button:hover {
+  background: #dc2626;
+  transform: scale(1.05);
+}
+
+/* =========================================
+   CHOOSE IMAGE BUTTON
+========================================= */
+
+.service-choose-image-button {
+  width: 100%;
+  height: 44px;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid #bae6fd;
+  border-radius: 10px;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-size: 13.5px;
+  font-weight: 700;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.service-choose-image-button:hover {
+  background: #bae6fd;
+  border-color: #7dd3fc;
+}
+
+/* =========================================
+   FORM ACTIONS
+========================================= */
+
+.service-form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 11px;
+  margin-top: 25px;
+  padding-top: 22px;
+  border-top: 1px solid #eef2f7;
+}
+
+.service-save-button,
+.service-cancel-button {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 18px;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 13.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.service-save-button {
+  border: none;
+  background: linear-gradient(135deg, #0284c7, #0ea5e9);
+  color: #ffffff;
+  box-shadow: 0 7px 17px rgba(2, 132, 199, 0.18);
+}
+
+.service-save-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(2, 132, 199, 0.25);
+}
+
+.service-save-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.service-cancel-button {
+  border: 1px solid #dbe4ee;
+  background: #ffffff;
+  color: #475569;
+}
+
+.service-cancel-button:hover {
+  background: #f8fafc;
+}
+
+/* =========================================
+   SERVICES LIST
+========================================= */
+
+.services-list-section {
+  width: 100%;
+  padding: 26px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+  box-sizing: border-box;
+}
+
+.services-list-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.services-list-heading h3 {
+  margin: 0 0 4px;
+  color: #0f172a;
+  font-size: 18px;
+  font-weight: 750;
+}
+
+.services-list-heading p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* =========================================
+   SERVICES GRID
+========================================= */
+
+.admin-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+/* =========================================
+   SERVICE CARD
+========================================= */
+
+.admin-service-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #ffffff;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.admin-service-card:hover {
+  transform: translateY(-3px);
+  border-color: #bae6fd;
+  box-shadow: 0 12px 26px rgba(15, 23, 42, 0.08);
+}
+
+/* =========================================
+   CARD IMAGE
+========================================= */
+
+.admin-service-image {
+  width: 100%;
+  height: 190px;
+  overflow: hidden;
+  background: #f1f5f9;
+}
+
+.admin-service-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.admin-service-card:hover .admin-service-image img {
+  transform: scale(1.04);
+}
+
+/* =========================================
+   NO IMAGE
+========================================= */
+
+.service-no-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  color: #94a3b8;
+}
+
+.service-no-image span {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.admin-service-content {
+  padding: 17px;
+}
+
+.admin-service-content h3 {
+  margin: 0 0 8px;
+  color: #0f172a;
+  font-size: 16px;
+  font-weight: 750;
+  line-height: 1.4;
+}
+
+.admin-service-content p {
+  min-height: 44px;
+  margin: 0 0 16px;
+
+  display: -webkit-box;
+  overflow: hidden;
+
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+
+  /* Standard compatibility property */
+  line-clamp: 2;
+
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* =========================================
+   CARD ACTIONS
+========================================= */
+
+.admin-service-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+}
+
+.service-edit-button,
+.service-delete-button {
+  height: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 650;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.service-edit-button {
+  border: 1px solid #bae6fd;
+  background: #f0f9ff;
+  color: #0369a1;
+}
+
+.service-edit-button:hover {
+  background: #e0f2fe;
+  border-color: #7dd3fc;
+  transform: translateY(-1px);
+}
+
+.service-delete-button {
+  border: 1px solid #fecaca;
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+.service-delete-button:hover {
+  background: #fee2e2;
+  border-color: #fca5a5;
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   EMPTY / LOADING STATE
+========================================= */
+
+.services-state {
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  text-align: center;
+  color: #94a3b8;
+}
+
+.services-state h3 {
+  margin: 4px 0 0;
+  color: #334155;
+  font-size: 17px;
+}
+
+.services-state p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+/* =========================================
+   LOADING SPINNER
+========================================= */
+
+.spin {
+  animation: services-spin 0.8s linear infinite;
+}
+
+@keyframes services-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+  .admin-services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .service-form-grid {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(260px, 320px);
+  }
+}
+
+/* =========================================
+   SMALL TABLET
+========================================= */
+
+@media (max-width: 800px) {
+  .service-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-image-section {
+    max-width: 500px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .services-page-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .services-refresh-button {
+    width: 100%;
+  }
+
+  .service-form-card,
+  .services-list-section {
+    padding: 18px;
+    border-radius: 14px;
+  }
+
+  .service-form-header {
+    align-items: flex-start;
+  }
+
+  .admin-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .service-save-button,
+  .service-cancel-button {
+    width: 100%;
+  }
+
+  .admin-service-image {
+    height: 210px;
+  }
+}
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+  .service-form-card,
+  .services-list-section {
+    padding: 15px;
+  }
+
+  .service-image-preview,
+  .service-upload-placeholder {
+    height: 200px;
+    min-height: 200px;
+  }
+
+  .admin-service-actions {
+    grid-template-columns: 1fr;
+  }
+}

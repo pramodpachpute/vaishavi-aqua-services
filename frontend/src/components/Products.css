@@ -1,0 +1,426 @@
+/* =========================================================
+   PRODUCTS SECTION
+========================================================= */
+
+.products-section {
+  position: relative;
+  overflow: hidden;
+
+  padding: 85px 0;
+
+  background:
+    radial-gradient(
+      circle at 90% 10%,
+      rgba(13, 150, 210, 0.07),
+      transparent 25%
+    ),
+    #ffffff;
+}
+
+.products-container {
+  width: min(1240px, 90%);
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.products-heading {
+  max-width: 720px;
+
+  margin: 0 auto 42px;
+
+  text-align: center;
+}
+
+.products-tag {
+  width: fit-content;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 15px;
+
+  padding: 8px 14px;
+
+  border-radius: 30px;
+
+  background: #eaf7fd;
+
+  color: #087fc0;
+
+  font-size: 10px;
+
+  font-weight: 900;
+
+  letter-spacing: 1px;
+}
+
+.products-tag span {
+  font-size: 13px;
+}
+
+.products-heading h2 {
+  margin: 0;
+
+  color: #081d38;
+
+  font-size: clamp(38px, 4vw, 53px);
+
+  line-height: 1.08;
+
+  font-weight: 900;
+
+  letter-spacing: -2px;
+}
+
+.products-heading h2 span {
+  color: #078dc4;
+}
+
+.products-heading > p {
+  max-width: 540px;
+
+  margin: 16px auto 0;
+
+  color: #6c7e92;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   PRODUCT GRID
+========================================================= */
+
+.products-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+
+/* =========================================================
+   PRODUCT CARD
+========================================================= */
+
+.product-card {
+  overflow: hidden;
+
+  border: 1px solid #e1ebf0;
+
+  border-radius: 22px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 10px 32px rgba(17, 73, 101, 0.07);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+
+  border-color: #c9e4ef;
+
+  box-shadow:
+    0 22px 48px rgba(17, 73, 101, 0.12);
+}
+
+
+/* =========================================================
+   PRODUCT IMAGE
+========================================================= */
+
+.product-image-area {
+  position: relative;
+
+  height: 285px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  padding: 25px;
+
+  background:
+    radial-gradient(
+      circle at center,
+      #ffffff 0%,
+      #f1faff 65%,
+      #eaf7fc 100%
+    );
+}
+
+.product-image-area::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: 25px;
+
+  width: 55%;
+  height: 15px;
+
+  border-radius: 50%;
+
+  background: rgba(15, 75, 104, 0.09);
+
+  filter: blur(9px);
+}
+
+.product-image {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.04);
+}
+
+
+/* =========================================================
+   CATEGORY
+========================================================= */
+
+.product-category {
+  position: absolute;
+
+  z-index: 5;
+
+  top: 16px;
+  left: 16px;
+
+  padding: 7px 11px;
+
+  border-radius: 30px;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  color: #078bc4;
+
+  font-size: 8px;
+
+  font-weight: 900;
+
+  letter-spacing: 1px;
+
+  box-shadow:
+    0 5px 15px rgba(13, 84, 116, 0.08);
+}
+
+
+/* =========================================================
+   PRODUCT DETAILS
+========================================================= */
+
+.product-details {
+  padding: 24px;
+}
+
+.product-details h3 {
+  margin: 0;
+
+  color: #0b2039;
+
+  font-size: 19px;
+
+  font-weight: 900;
+
+  letter-spacing: -0.4px;
+}
+
+.product-details > p {
+  min-height: 45px;
+
+  margin: 10px 0 18px;
+
+  color: #738498;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.product-features {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-bottom: 22px;
+}
+
+.product-feature {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 7px 9px;
+
+  border-radius: 8px;
+
+  background: #f2f9fc;
+
+  color: #485d72;
+
+  font-size: 9px;
+
+  font-weight: 750;
+}
+
+.product-feature span {
+  color: #078bc4;
+
+  font-weight: 900;
+}
+
+
+/* =========================================================
+   ENQUIRY BUTTON
+========================================================= */
+
+.product-enquiry {
+  width: 100%;
+
+  min-height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  border-radius: 11px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2fc553,
+      #16a53b
+    );
+
+  color: #ffffff;
+
+  font-size: 11px;
+
+  font-weight: 850;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 9px 22px rgba(25, 168, 64, 0.17);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.product-enquiry:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 13px 27px rgba(25, 168, 64, 0.23);
+}
+
+.product-whatsapp-icon {
+  width: 17px;
+  height: 17px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #ffffff;
+
+  border-radius: 50%;
+
+  color: transparent;
+}
+
+.product-enquiry b {
+  margin-left: 4px;
+
+  font-size: 16px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 620px) {
+
+  .products-section {
+    padding: 60px 0;
+  }
+
+  .products-container {
+    width: 90%;
+  }
+
+  .products-heading {
+    margin-bottom: 30px;
+  }
+
+  .products-heading h2 {
+    font-size: 36px;
+
+    letter-spacing: -1.4px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-image-area {
+    height: 260px;
+  }
+
+  .product-details > p {
+    min-height: auto;
+  }
+
+}

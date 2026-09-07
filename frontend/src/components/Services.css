@@ -1,0 +1,956 @@
+/* =========================================================
+   SERVICES SECTION
+========================================================= */
+
+.services {
+  position: relative;
+  overflow: hidden;
+
+  padding: 78px 0 72px;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(18, 155, 214, 0.07),
+      transparent 27%
+    ),
+    #f8fcff;
+}
+
+.services-container {
+  width: min(1400px, 92%);
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.services-heading {
+  max-width: 760px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.services-badge {
+  width: fit-content;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 16px;
+  padding: 8px 14px;
+
+  border-radius: 30px;
+
+  background: #eaf7fd;
+  color: #087bc1;
+
+  font-size: 10px;
+  font-weight: 900;
+
+  letter-spacing: 0.8px;
+
+  box-shadow:
+    0 7px 18px rgba(7, 126, 190, 0.07);
+}
+
+.services-badge span {
+  font-size: 13px;
+}
+
+.services-heading h2 {
+  margin: 0;
+
+  color: #071c3d;
+
+  font-size: clamp(40px, 4vw, 58px);
+  line-height: 1.04;
+
+  font-weight: 900;
+  letter-spacing: -2.5px;
+}
+
+.services-heading h2 span {
+  color: #1384d5;
+}
+
+.services-heading p {
+  max-width: 520px;
+
+  margin: 16px auto 0;
+
+  color: #66788d;
+
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.services-wave {
+  margin-top: 7px;
+
+  color: #69bde8;
+
+  font-size: 25px;
+  line-height: 1;
+}
+
+
+/* =========================================================
+   INDUSTRIAL / DOMESTIC / COMMERCIAL
+========================================================= */
+
+.services-category {
+  position: relative;
+
+  width: 100%;
+
+  margin: 4px auto 34px;
+  padding: 0 10px;
+
+  box-sizing: border-box;
+
+  text-align: center;
+}
+
+.services-category > span {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #1384d5;
+
+  font-size: 10px;
+  font-weight: 850;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+/* BIG CATEGORY HEADING */
+
+.services-category h3 {
+  margin: 0;
+
+  color: #071c3d;
+
+  font-size: clamp(38px, 4.6vw, 62px);
+  font-weight: 900;
+
+  line-height: 1.08;
+
+  letter-spacing: -1.8px;
+  text-transform: uppercase;
+}
+
+
+/* BLUE / SYMBOL */
+
+.services-category h3 b {
+  display: inline-block;
+
+  margin: 0 9px;
+
+  color: #1384d5;
+
+  font-weight: 500;
+}
+
+
+/* UNDERLINE */
+
+.services-category h3::after {
+  content: "";
+
+  display: block;
+
+  width: 70px;
+  height: 4px;
+
+  margin: 15px auto 0;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #0aa5d8,
+      #087eb7
+    );
+}
+
+
+/* =========================================================
+   SERVICES GRID
+========================================================= */
+
+.services-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 18px;
+
+  margin-top: 32px;
+}
+
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.service-card {
+  position: relative;
+
+  min-height: 150px;
+
+  display: grid;
+
+  grid-template-columns:
+    92px 1fr;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding:
+    24px
+    28px
+    24px
+    22px;
+
+  border: 1px solid #e3edf3;
+  border-radius: 19px;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.96
+    );
+
+  box-shadow:
+    0 12px 30px
+    rgba(
+      20,
+      75,
+      104,
+      0.07
+    );
+
+  transition:
+    transform 0.23s ease,
+    box-shadow 0.23s ease,
+    border-color 0.23s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #cae5f1;
+
+  box-shadow:
+    0 20px 42px
+    rgba(
+      20,
+      75,
+      104,
+      0.12
+    );
+}
+
+
+/* =========================================================
+   SERVICE NUMBER
+========================================================= */
+
+.service-number {
+  position: absolute;
+
+  top: 15px;
+  right: 16px;
+
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e8f6fd;
+  color: #1282cf;
+
+  font-size: 9px;
+  font-weight: 900;
+}
+
+
+/* =========================================================
+   SERVICE ICON
+========================================================= */
+
+.service-icon-box {
+  width: 82px;
+  height: 82px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #edf9fe,
+      #e3f5fc
+    );
+
+  box-shadow:
+    inset
+    0
+    0
+    0
+    1px
+    rgba(
+      102,
+      190,
+      229,
+      0.08
+    );
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.service-icon-box span {
+  color: #1184d2;
+
+  font-size: 34px;
+  line-height: 1;
+}
+
+.service-card:hover .service-icon-box {
+  transform: scale(1.04);
+
+  background:
+    linear-gradient(
+      145deg,
+      #e2f6fd,
+      #d8f1fb
+    );
+}
+
+
+/* =========================================================
+   SERVICE CONTENT
+========================================================= */
+
+.service-card-content {
+  padding-right: 28px;
+}
+
+.service-card-content h3 {
+  margin: 0 0 8px;
+
+  color: #071c3d;
+
+  font-size: 15px;
+  font-weight: 850;
+}
+
+.service-card-content p {
+  max-width: 230px;
+
+  margin: 0;
+
+  color: #607389;
+
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   ARROW BUTTON
+========================================================= */
+
+.service-arrow {
+  position: absolute;
+
+  right: 16px;
+  bottom: 15px;
+
+  width: 27px;
+  height: 27px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #1889da;
+  border-radius: 50%;
+
+  background: #ffffff;
+  color: #1889da;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.service-arrow:hover {
+  transform: translateX(2px);
+
+  background: #1889da;
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   SUPPORT BANNER
+========================================================= */
+
+.services-support {
+  position: relative;
+
+  min-height: 108px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-top: 42px;
+
+  padding:
+    18px
+    40px
+    18px
+    210px;
+
+  overflow: hidden;
+
+  border: 1px solid #dcebf2;
+  border-radius: 19px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ffffff 0%,
+      #f7fcff 100%
+    );
+
+  box-shadow:
+    0 12px 28px
+    rgba(
+      22,
+      77,
+      105,
+      0.07
+    );
+}
+
+
+/* =========================================================
+   SUPPORT DECORATION
+========================================================= */
+
+.support-decoration {
+  position: absolute;
+
+  left: -70px;
+  bottom: -74px;
+
+  width: 250px;
+  height: 160px;
+
+  border:
+    9px solid
+    rgba(
+      30,
+      161,
+      221,
+      0.12
+    );
+
+  border-radius: 50%;
+
+  transform: rotate(-10deg);
+}
+
+.support-decoration::before,
+.support-decoration::after {
+  content: "";
+
+  position: absolute;
+
+  border-radius: 50%;
+
+  border:
+    2px solid
+    rgba(
+      30,
+      161,
+      221,
+      0.15
+    );
+}
+
+.support-decoration::before {
+  width: 13px;
+  height: 13px;
+
+  right: 7px;
+  top: -10px;
+}
+
+.support-decoration::after {
+  width: 7px;
+  height: 7px;
+
+  right: 45px;
+  top: -25px;
+}
+
+
+/* =========================================================
+   SUPPORT LEFT
+========================================================= */
+
+.support-left {
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+}
+
+.support-icon {
+  width: 64px;
+  height: 64px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+  color: #1283d1;
+
+  font-size: 26px;
+
+  box-shadow:
+    0 8px 24px
+    rgba(
+      18,
+      114,
+      163,
+      0.1
+    );
+}
+
+.support-left h3 {
+  margin: 0 0 4px;
+
+  color: #071c3d;
+
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.support-left p {
+  margin: 0;
+
+  color: #65778c;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   SUPPORT ACTIONS
+========================================================= */
+
+.support-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+}
+
+.support-whatsapp,
+.support-call {
+  min-height: 46px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 0 20px;
+
+  border-radius: 11px;
+
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 850;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+/* =========================================================
+   WHATSAPP BUTTON
+========================================================= */
+
+.support-whatsapp {
+  background:
+    linear-gradient(
+      135deg,
+      #2cc44e,
+      #14a83b
+    );
+
+  box-shadow:
+    0 9px 22px
+    rgba(
+      31,
+      170,
+      67,
+      0.2
+    );
+}
+
+.whatsapp-circle {
+  width: 17px;
+  height: 17px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+
+  color: transparent;
+}
+
+
+/* =========================================================
+   CALL BUTTON
+========================================================= */
+
+.support-call {
+  background:
+    linear-gradient(
+      135deg,
+      #1783df,
+      #0b5fc5
+    );
+
+  box-shadow:
+    0 9px 22px
+    rgba(
+      13,
+      103,
+      201,
+      0.2
+    );
+}
+
+.support-whatsapp:hover,
+.support-call:hover {
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+  .services-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .services-category h3 {
+    font-size: 42px;
+  }
+
+  .services-support {
+    padding-left: 40px;
+  }
+
+  .support-decoration {
+    display: none;
+  }
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 760px) {
+
+  .services {
+    padding: 65px 0;
+  }
+
+  .services-heading {
+    margin-bottom: 34px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* CATEGORY */
+
+  .services-category {
+    margin-bottom: 25px;
+  }
+
+  .services-category h3 {
+    font-size: 34px;
+    line-height: 1.15;
+  }
+
+  .services-category h3 b {
+    margin: 0 5px;
+  }
+
+
+  /* SUPPORT */
+
+  .services-support {
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 24px;
+  }
+
+  .support-actions {
+    width: 100%;
+  }
+
+  .support-whatsapp,
+  .support-call {
+    flex: 1;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 520px) {
+
+  .services {
+    padding: 55px 0;
+  }
+
+  .services-container {
+    width: 90%;
+  }
+
+
+  /* MAIN HEADING */
+
+  .services-heading {
+    margin-bottom: 30px;
+  }
+
+  .services-heading h2 {
+    font-size: 38px;
+    letter-spacing: -1.8px;
+  }
+
+  .services-heading p {
+    font-size: 12px;
+  }
+
+
+  /* =====================================================
+     BIG CATEGORY HEADING MOBILE
+  ===================================================== */
+
+  .services-category {
+    margin: 0 auto 23px;
+    padding: 0 4px;
+  }
+
+  .services-category > span {
+    margin-bottom: 7px;
+
+    font-size: 8px;
+    letter-spacing: 1.5px;
+  }
+
+  .services-category h3 {
+    font-size: 27px;
+    line-height: 1.22;
+
+    letter-spacing: -0.6px;
+  }
+
+  .services-category h3 b {
+    margin: 0 3px;
+
+    color: #1384d5;
+  }
+
+  .services-category h3::after {
+    width: 50px;
+    height: 3px;
+
+    margin-top: 11px;
+  }
+
+
+  /* SERVICE CARD */
+
+  .services-grid {
+    gap: 13px;
+    margin-top: 24px;
+  }
+
+  .service-card {
+    grid-template-columns:
+      72px
+      1fr;
+
+    gap: 15px;
+
+    min-height: 135px;
+
+    padding: 20px;
+  }
+
+  .service-icon-box {
+    width: 68px;
+    height: 68px;
+
+    border-radius: 16px;
+  }
+
+  .service-icon-box span {
+    font-size: 28px;
+  }
+
+  .service-card-content {
+    padding-right: 16px;
+  }
+
+  .service-card-content h3 {
+    font-size: 14px;
+  }
+
+  .service-card-content p {
+    font-size: 10px;
+  }
+
+
+  /* SUPPORT */
+
+  .support-left {
+    align-items: flex-start;
+  }
+
+  .support-icon {
+    width: 52px;
+    height: 52px;
+
+    font-size: 22px;
+  }
+
+  .support-actions {
+    flex-direction: column;
+  }
+
+  .support-whatsapp,
+  .support-call {
+    width: 100%;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .services-heading h2 {
+    font-size: 34px;
+  }
+
+  .services-category h3 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .services-category h3 b {
+    margin: 0 2px;
+  }
+
+  .service-card {
+    grid-template-columns:
+      62px
+      1fr;
+
+    gap: 12px;
+
+    padding: 17px;
+  }
+
+  .service-icon-box {
+    width: 60px;
+    height: 60px;
+  }
+
+  .service-icon-box span {
+    font-size: 25px;
+  }
+
+  .service-card-content {
+    padding-right: 13px;
+  }
+
+  .service-card-content h3 {
+    font-size: 13px;
+  }
+
+  .service-card-content p {
+    font-size: 9.5px;
+  }
+}
