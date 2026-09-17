@@ -68,7 +68,7 @@ const Booking = () => {
       setLoading(true);
 
       const response = await fetch(
-        "http://localhost:8080/api/bookings",
+	`${import.meta.env.VITE_API_URL || "http://localhost:8080"}/api/bookings`,
         {
           method: "POST",
           headers: {
