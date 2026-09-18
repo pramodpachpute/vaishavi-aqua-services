@@ -88,10 +88,11 @@ const Products = () => {
             <span>for Your Needs.</span>
           </h2>
 
-          <p>
-            Domestic and industrial water purification
-            solutions from Vaishnavi Enterprises.
-          </p>
+	<p>
+	  Explore domestic, commercial and industrial RO water purifiers
+	  and water purification solutions in Punawale, Pimpri-Chinchwad,
+	  Pune and nearby areas.
+	</p>
         </div>
 
         {/* ================= LOADING ================= */}

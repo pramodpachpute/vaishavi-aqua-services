@@ -21,9 +21,11 @@ const About = () => {
 
         <div className="about-right">
           <p>
-            Vaishavi Aqua Services provides reliable RO water purifier
-            repair, installation and maintenance at your doorstep.
-          </p>
+	  Vaishnavi Enterprises provides reliable domestic, commercial and
+	  industrial RO water purifier sales, installation, repair, filter
+	  replacement and maintenance services in Punawale, Pimpri-Chinchwad,
+	  Pune and nearby areas.
+	</p>
 
           <div className="about-points">
             <div className="about-point">

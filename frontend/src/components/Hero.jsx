@@ -114,7 +114,7 @@ const Hero = () => {
               </div>
 
               <span className="product-brand">
-                VAISHAVI AQUA SERVICES
+                VAISHNAVI ENTERPRISES
               </span>
 
               <h2>

@@ -17,6 +17,7 @@ const services = [
   "AMC Service",
   "Domestic RO",
   "Industrial RO",
+  "Industrial RO",
   "Water Purifier Sales",
 ];
 
@@ -162,11 +163,11 @@ const Reviews = () => {
             <span> Customers.</span>
           </h2>
 
-          <p>
-            See what our customers say about
-            Vaishnavi Enterprises water purifier
-            sales and services.
-          </p>
+	<p>
+	  See what our customers say about Vaishnavi Enterprises
+	  RO water purifier sales and services in Punawale,
+	  Pimpri-Chinchwad and nearby Pune areas.
+	</p>
         </div>
 
         {/* MAIN LAYOUT */}

@@ -9,6 +9,7 @@ const services = [
   "AMC Service",
   "Domestic RO System",
   "Industrial RO System",
+  "Commercial RO System",
   "New Water Purifier",
 ];
 
@@ -124,10 +125,10 @@ const Booking = () => {
             <span>Book It in Minutes.</span>
           </h2>
 
-          <p>
-            Share your requirement and our team will contact you for service
-            assistance.
-          </p>
+	<p>
+	  Book domestic, commercial or industrial RO water purifier service in
+	  Punawale, Pimpri-Chinchwad, Pune and nearby areas.
+	</p>
 
           <div className="booking-points">
             <div>
@@ -142,7 +143,7 @@ const Booking = () => {
 
             <div>
               <span>✓</span>
-              Domestic & Industrial RO
+              Domestic • Commercial • Industrial RO
             </div>
           </div>
         </div>

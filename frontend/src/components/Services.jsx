@@ -63,16 +63,17 @@ const Services = () => {
             OUR SERVICES
           </div>
 
-          <h2>
-            Complete Care for Your
-            <br />
-            <span>Water Purifier.</span>
-          </h2>
+	<h2>
+	  RO Water Purifier
+	  <br />
+	  <span>Sales & Service in Pune.</span>
+	</h2>
 
-          <p>
-            Professional installation, repair and maintenance services at your
-            doorstep.
-          </p>
+	<p>
+	  Professional domestic, commercial and industrial RO sales, repair,
+	  installation, filter replacement and maintenance services in Punawale,
+	  Pimpri-Chinchwad, Pune and nearby areas.
+	</p>
 
           <div className="services-wave">〰</div>
         </div>
