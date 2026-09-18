@@ -126,8 +126,22 @@ const Footer = () => {
               <ChevronRight size={13} />
               Contact
             </a>
-          </div>
+	    <a href="/ro-service-punawale">
+	  <ChevronRight size={13} />
+	  RO Service Punawale
+	</a>
 
+	<a href="/ro-service-wakad">
+	  <ChevronRight size={13} />
+	  RO Service Wakad
+	</a>
+
+	<a href="/ro-service-hinjawadi">
+	  <ChevronRight size={13} />
+	  RO Service Hinjawadi
+	</a>
+          </div>
+	   
 
           {/* SERVICES */}
 
