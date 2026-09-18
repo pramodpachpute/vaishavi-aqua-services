@@ -21,16 +21,16 @@ const Hero = () => {
             <span>Trusted Water Purifier Service</span>
           </div>
 
-          <h1>
-            Pure Water.
-            <br />
-            <span>Better Living.</span>
-          </h1>
+	<h1>
+	  RO Water Purifier Service
+	 <br />
+	  <span>in Punawale & Pimpri-Chinchwad</span>
+	</h1>
 
-          <p className="hero-description">
-            Professional RO water purifier repair, installation and maintenance
-            services delivered to your doorstep by experienced technicians.
-          </p>
+	<p className="hero-description">
+	  Professional RO water purifier repair, installation, filter replacement
+	  and maintenance services in Punawale, Pimpri-Chinchwad, Pune and nearby areas.
+	</p>
 
           {/* Buttons */}
           <div className="hero-buttons">
@@ -47,7 +47,7 @@ const Hero = () => {
             </a>
 
             <a
-              href="tel:+919999999999"
+              href="tel:+919405439494"
               className="hero-secondary-btn"
             >
               <span className="call-symbol">☎</span>
