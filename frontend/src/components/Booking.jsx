@@ -186,10 +186,13 @@ const Booking = () => {
             </div>
 
             <div className="booking-group">
-              <label>Select Service *</label>
-
-              <select
-                name="service"
+		<label htmlFor="booking-service">
+		  Select Service *
+		</label>
+ 
+	      <select
+		id="booking-service"
+		name="service"
                 value={formData.service}
                 onChange={handleChange}
               >

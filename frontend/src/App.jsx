@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <Navbar />
-
+     <main>
       <Hero />
 
       <About />
@@ -32,7 +32,7 @@ function App() {
       <OurServices />
 
       <Contact />
-
+     </main>
       <Footer />
     </>
   );
