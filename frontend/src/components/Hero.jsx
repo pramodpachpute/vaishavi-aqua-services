@@ -2,7 +2,10 @@ import React from "react";
 import "./Hero.css";
 import heroImage from "../assets/hero.webp";
 
-const Hero = () => {
+const Hero = ({
+  locationTitle = "Punawale & Pimpri-Chinchwad",
+  locationDescription = "Punawale, Pimpri-Chinchwad, Pune and nearby areas",
+}) => {
   return (
     <section className="hero" id="home">
       {/* Decorative background */}
@@ -24,12 +27,12 @@ const Hero = () => {
 	<h1>
 	  RO Water Purifier Service
 	 <br />
-	  <span>in Punawale & Pimpri-Chinchwad</span>
+	    <span>in {locationTitle}</span>
 	</h1>
 
 	<p className="hero-description">
 	  Professional RO water purifier repair, installation, filter replacement
-	  and maintenance services in Punawale, Pimpri-Chinchwad, Pune and nearby areas.
+	  and maintenance services in {locationDescription}.
 	</p>
 
           {/* Buttons */}
